@@ -40,8 +40,6 @@
 <br>
 
 <img src="selectCar\static\readmeimage\analysis.png" alt="content1" width="700px" height="400px">
-<!-- <br><br> -->
-<!-- <img src="readmeimage/content2.png" alt="content2" width="700px" height="400px"> -->
 <br><br>
 <h2>DASHBOARD SECTION</h2>
 <br>
@@ -66,6 +64,14 @@
 <img src="selectCar\static\readmeimage\chatbot2.png" alt="about" width="700px" height="400px">
 
 <br><br>
+<h2>PRICE PREDICTION SECTION</h2>
+<br>
+<img src="selectCar\static\readmeimage\ml.png" alt="about" width="700px" height="400px">
+<br><br>
+<img src="selectCar\static\readmeimage\ml1.png" alt="about" width="700px" height="400px">
+
+<br><br>
+
 <h2>FEATURED SECTION</h2>
 <br>
 
