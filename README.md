@@ -9,6 +9,9 @@
 <br>
 <ul>
 <li>
+<h3>Clone the project</h3>
+</li>
+<li>
 <h3>Install requirements.txt</h3>
 
 pip install -r requirements.txt
