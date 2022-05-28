@@ -66,9 +66,9 @@
 <br><br>
 <h2>PRICE PREDICTION SECTION</h2>
 <br>
-<img src="selectCar\static\readmeimage\ml.png" alt="about" width="700px" height="400px">
+<img src="static\readmeimage\ml.png" alt="about" width="700px" height="400px">
 <br><br>
-<img src="selectCar\static\readmeimage\ml1.png" alt="about" width="700px" height="400px">
+<img src="static\readmeimage\ml.png" alt="about" width="700px" height="400px">
 
 <br><br>
 
