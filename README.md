@@ -4,11 +4,14 @@
 <a href="#" target="_blank">HAVE A LOOK</a>
 </h2> 
 <br><br>
+
 ## 📌 How to run this projects:
-1.Create Venv <br>
-2.Install requirements.txt <br>
-3.Run Project <br>
+<br>
+<h3>1.Create Venv </h3><br>
+<h3>2.Install requirements.txt</h3> <br>
+<h3>3.Run Project </h3><br>
 <br><br>
+
 ## 📌 Tech Stack:
 <br>
 
