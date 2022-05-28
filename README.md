@@ -15,7 +15,7 @@ pip install -r requirements.txt
 </li>
 <br>
 <li>
-<h3>3.Run Project </h3><br>
+<h3>Run Project </h3>
 
 python manage.py runserver
 
