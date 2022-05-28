@@ -1,0 +1,340 @@
+{% extends 'selectCar/app-base.html' %} {% load static %} {% block title %} Car
+Page {% endblock %} {% block body %}
+
+<section class="vehicles" id="vehicles" style="margin-top: 75px">
+  <h1 class="heading">Dashboard <span></span></h1>
+  <form action="/car/" method="POST" class="mb-3">
+    {% csrf_token %}
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01"
+          >Select option</label
+        >
+      </div>
+      <select
+        name="Brand"
+        class="custom-select custom-select-lg"
+        id="inputGroupSelect01"
+        aria-label="Example select with button addon"
+      >
+        <option value="{{car.brand}}">
+          {% if car.brand %} {{car.brand}} {% else %} Choose {% endif %}
+        </option>
+        {% for carname in car.cars %}
+        <option value="{{carname}}">{{carname}}</option>
+        {% endfor %}
+      </select>
+      <input
+        name="year"
+        type="text"
+        placeholder="Year"
+        value="{{car.year}}"
+        class="form-control"
+      />
+      <input
+        name="price"
+        type="text"
+        placeholder="Price"
+        value="{{car.price}}"
+        class="form-control"
+      />
+      <div class="input-group-append">
+        <input
+          class="btn btn-outline-secondary font-weight-bold"
+          type="submit"
+          value="Search"
+        />
+      </div>
+    </div>
+  </form>
+  {% if car.msg %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{car.msg}}</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endif %}
+  <div class="row mt-3">
+    {% if car.dataSet > 0 %}
+    <div class="col-lg-6 col-md-12 mb-3 mt-3">
+      <div class="card" style="height: 316px">
+        {% if request.path == '/car/data1' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-6.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data2' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-6.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data3' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-3.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data4' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/vehicle-3.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data5' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-6.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data6' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-6.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data7' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-5.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data8' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-6.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% elif request.path == '/car/data9' %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-6.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% else %}
+        <img
+          class="mt-4 rounded mx-auto d-block"
+          src="{% static 'image/car-2.png' %}"
+          width="40% "
+          alt="Card image cap"
+        />
+        {% endif %}
+        <div class="card-body text-center">
+          {% for CarData in dataT.0 %} {% if forloop.counter0 == 1 %}
+          <h5 class="card-title"><strong>{{CarData}}</strong></h5>
+          {% endif %} {% if forloop.counter0 == 2 %}
+          <h5 class="card-title">{{CarData}}</h5>
+          {% endif %} {% if forloop.counter0 == 3 %}
+          <h5 class="card-title">₹ {{CarData}}</h5>
+          {% endif %} {% endfor %}
+          <div class="text-center mt-2">
+            <a href="#" class="btn btn-primary text-center"
+              >Visit official website</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 mb-3 mt-3">
+      <div class="card">
+        <div class="card-body">
+          <canvas id="myChart" height="150px"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 mb-3 mt-3">
+      <div class="card">
+        <div class="card-body">
+          <canvas id="myChartLine" height="300%"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 mb-3 mt-3">
+      <div class="card">
+        <div class="card-body">
+          <canvas id="myChartPie"></canvas>
+        </div>
+      </div>
+    </div>
+    <hr style="width: 100%; text-align: center" />
+    <div class="col-lg-12 col-md-12 mb-3 mt-3">
+      <table
+        id="example"
+        class="hover table table-responsive-lg"
+        style="width: 100%"
+      >
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>year</th>
+            <th>selling_price</th>
+            <th>km_driven</th>
+            <th>fuel</th>
+            <th>seller_type</th>
+            <th>transmission</th>
+            <th>owner</th>
+            <th>seats</th>
+            <th>mileagev</th>
+            <th>enginev</th>
+            <th>max_powerv</th>
+            <th>torquev</th>
+            <th>Brand</th>
+            <th>model_name</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    {% else %}
+    <div class="col-lg-12 col-md-12 mb-3 mt-3">
+      <div class="card" style="height: 316px">
+        <div class="card-body d-flex align-items-center">
+          <img
+            class="rounded mx-auto d-block"
+            src="{% static 'image/nodata.png' %}"
+            alt="No Data"
+          />
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+  //Table Data
+  $('#example').DataTable({
+      data: {{ dataT | safe}}
+                      });
+
+  //Bar myChart Data
+  const data = {
+      labels: {{ dataX | safe }},
+  datasets: [{
+      label: 'Car Dataset in Bar Chart',
+      data: {{ dataY | safe }},
+      backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)'
+  ],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.8)',
+      'rgba(255, 159, 64, 0.8)',
+      'rgba(255, 205, 86, 0.8)',
+      'rgba(75, 192, 192, 0.8)',
+      'rgba(54, 162, 235, 0.8)',
+      'rgba(153, 102, 255, 0.8)',
+  ],
+      borderWidth: 1
+          }]
+      };
+
+  const config = {
+      type: 'bar',
+      data: data,
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      },
+  };
+
+  const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+  );
+
+  //Line Chart Data
+  const data1 = {
+      labels: {{ dataX | safe }},
+  datasets: [{
+      label: 'Car Dataset in Line Chart',
+      data: {{ dataY | safe }},
+      fill: false,
+      borderColor: 'rgb(75, 192, 192)',
+      tension: 0.1,
+      borderColor: 'rgb(75, 192, 192)',
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.8)',
+      'rgba(255, 159, 64, 0.8)',
+      'rgba(255, 205, 86, 0.8)',
+      'rgba(75, 192, 192, 0.8)',
+      'rgba(54, 162, 235, 0.8)',
+      'rgba(153, 102, 255, 0.8)',
+  ],
+      borderWidth: 2
+          }]
+      };
+
+  const config1 = {
+      type: 'line',
+      data: data1,
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      },
+  };
+
+  const myChartLine = new Chart(
+      document.getElementById('myChartLine'),
+      config1
+  );
+
+  //Pie Chart Data
+  const data2 = {
+      labels: {{ dataX | safe }},
+  datasets: [{
+      label: 'Car Dataset in Pie Chart',
+      data: {{ dataY | safe }},
+      backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)'
+  ],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.8)',
+      'rgba(255, 159, 64, 0.8)',
+      'rgba(255, 205, 86, 0.8)',
+      'rgba(75, 192, 192, 0.8)',
+      'rgba(54, 162, 235, 0.8)',
+      'rgba(153, 102, 255, 0.8)',
+  ],
+      borderWidth: 1
+          }]
+      };
+
+  const config2 = {
+      type: 'pie',
+      data: data2,
+  };
+
+  const myChartPie = new Chart(
+      document.getElementById('myChartPie'),
+      config2
+  );
+</script>
+
+{% endblock %}

@@ -1,0 +1,174 @@
+{% extends 'selectCar/app-base.html' %} {% load static %} {% block title %} ML
+Prediction Page {% endblock %} {% block body %}
+
+<section class="vehicles" id="vehicles" style="margin-top: 75px">
+  <h1 class="heading">ML Prediction <span></span></h1>
+  <form action="/prediction/" method="POST" class="mb-3">
+    {% csrf_token %}
+    <div class="form-row mb-2 mt-2">
+      <h4><label for="input8">Brand</label></h4>
+      <select
+        name="brand"
+        class="custom-select custom-select"
+        id="input8"
+        aria-label="Example select with button addon"
+      >
+        <option value="0">Ambassador</option>
+        <option value="1">Ashok</option>
+        <option value="2">Audi</option>
+        <option value="3">BMW</option>
+        <option value="4">Chevrolet</option>
+        <option value="5">Daewoo</option>
+        <option value="6">Datsun</option>
+        <option value="7">Fiat</option>
+        <option value="8">Force</option>
+        <option value="9">Ford</option>
+        <option value="10">Honda</option>
+        <option value="11">Hyundai</option>
+        <option value="12">Isuzu</option>
+        <option value="13">Jaguar</option>
+        <option value="14">Jeep</option>
+        <option value="15">Kia</option>
+        <option value="16">Land</option>
+        <option value="17">Lexus</option>
+        <option value="18">MG</option>
+        <option value="20">Maruti</option>
+        <option value="21">Mercedes-Benz</option>
+        <option value="22">Mitsubishi</option>
+        <option value="23">Nissan</option>
+        <option value="24">Opel</option>
+        <option value="26">Renault</option>
+        <option value="27">Skoda</option>
+        <option value="28">Tata</option>
+        <option value="30">Volkswagen</option>
+        <option value="31">Volvo</option>
+      </select>
+    </div>
+    <div class="form-row mb-2 mt-2 text-center">
+      <!-- <div class="form-group col-md-6">
+                <label for="input3">Transmission</label>
+                <input type="text" name="transmission" class="form-control" id="input3" placeholder="Transmission">
+            </div> -->
+      <h4><label for="input3">Transmission</label></h4>
+      <select
+        name="transmission"
+        class="custom-select custom-select"
+        id="input3"
+        aria-label="Example select with button addon"
+      >
+        <option value="0">Automatic</option>
+        <option value="1">Manual</option>
+      </select>
+    </div>
+    <!-- <div class="form-group col-md-6"> -->
+    <div class="form-row mb-2 mt-2">
+      <h4><label for="input2">Km Driven</label></h4>
+      <input
+        type="text"
+        name="km_driven"
+        class="form-control"
+        id="input2"
+        placeholder="Km Driven"
+      />
+    </div>
+    <div class="form-row mb-2 mt-2">
+      <!-- <div class="form-group col-md-6"> -->
+      <h4><label for="input5">Mileage</label></h4>
+      <input
+        type="text"
+        name="mileage"
+        class="form-control"
+        id="input5"
+        placeholder="Mileage"
+      />
+      <!-- </div> -->
+    </div>
+    <!-- <div class="form-group col-md-6"> -->
+    <div class="form-row mb-2 mt-2">
+      <h4><label for="input4">Owner</label></h4>
+      <select
+        name="owner"
+        class="custom-select custom-select"
+        id="input4"
+        aria-label="Example select with button addon"
+      >
+        <option value="0">First Owner</option>
+        <option value="2">Second Owner</option>
+        <option value="4">Third Owner</option>
+        <option value="1">Fourth and more</option>
+      </select>
+    </div>
+    <div class="form-row mb-2 mt-2">
+      <!-- <div class="form-group col-md-6"> -->
+      <h4><label for="input7">Max Power</label></h4>
+      <input
+        type="text"
+        name="max_power"
+        class="form-control"
+        id="input7"
+        placeholder="Max Power"
+      />
+      <!-- </div> -->
+    </div>
+
+    <!-- <div class="form-group col-md-6"> -->
+    <div class="form-row mb-2 mt-2">
+      <h4><label for="input6">Engine</label></h4>
+      <input
+        type="text"
+        name="engine"
+        class="form-control"
+        id="input6"
+        placeholder="Engine"
+      />
+    </div>
+    <!-- <div class="form-group col-md-6"> -->
+
+    <br />
+    <div class="text-center">
+      <input
+        class="btn btn-outline-success font-weight-bold"
+        type="submit"
+        value="Predict"
+      />
+    </div>
+  </form>
+  <!-- <br> -->
+  {% if car.msg %}
+  <div
+    class="alert alert-warning alert-dismissible fade show mb-5"
+    role="alert"
+  >
+    <strong>{{car.msg}}</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endif %}
+  <div class="row mt-3">
+    {% if result %}
+    <!-- {{result}} -->
+    <div class="col-lg-12 mt-4">
+      <div class="alert alert-info text-center d-2">
+        <h3 class="text-dark">
+          The predicted selling price is <strong>{{ result }}</strong>
+        </h3>
+      </div>
+    </div>
+    {% else %}
+    <div class="col-lg-12 col-md-12 mb-3 mt-3">
+      <div class="card" style="height: 316px">
+        <div class="card-body d-flex align-items-center">
+          <img
+            class="rounded mx-auto d-block"
+            src="{% static 'image/nodata.png' %}"
+            alt="No Data"
+          />
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}
