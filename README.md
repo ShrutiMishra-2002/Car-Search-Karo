@@ -23,6 +23,16 @@
 
 <br><br>
 
+## 📌 About the project:
+<br>
+<ul>
+<li>CarSearchKaro is a data analysis and machine learning venture that helps users search cars that meet their requirements.</li>
+<li>It carries automotive content such as pleasing data visuals, modern data analysis and AI chatbot for cars of various brands available in the market.</li>
+<li>The web application includes many innovative features to ensure that users get a detailed price estimation based on the filters added such as brand, mileage, price range and a hist of other factors and before visiting a dealer showroom. It also permits the user to provide inputs that they feel might help other users.</li>
+<li>Our vision is to construct a complete ecosystem for prospective buyers so that they have easy and complete access to information and data that will help them in making the right car choice. </li>
+</ul>
+<br><br>
+
 ## 📌 Main Page:
 <br><br>
 
