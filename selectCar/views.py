@@ -29,6 +29,7 @@ car: dict = {
 class Home(View):
     
     def get(self, request):
+        car['alert']=""
         return render(request, 'selectCar/index.html')
 
     def post(self, request):
