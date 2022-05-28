@@ -3,16 +3,20 @@
 <h2> Website Link : 
 <a href="#" target="_blank">HAVE A LOOK</a>
 </h2> 
-<br>
-
+<br><br>
+## 📌 How to run this projects:
+1.Create Venv <br>
+2.Install requirements.txt <br>
+3.Run Project <br>
+<br><br>
 ## 📌 Tech Stack:
 <br>
 
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
 [![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
-[![DJANGO](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
-[![PYTHON](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
+[![DJANGO](https://img.shields.io/badge/django%20-%23323330.svg?&style=for-the-badge&logo=Django&logoColor=%23F7DF1E)]
+[![PYTHON](https://img.shields.io/badge/python%20-%23E34F26.svg?&style=for-the-badge&logo=python&logoColor=white)]
 
 <br><br>
 
