@@ -68,7 +68,7 @@
 <br>
 <img src="static\readmeimage\ml.png" alt="about" width="700px" height="400px">
 <br><br>
-<img src="static\readmeimage\ml.png" alt="about" width="700px" height="400px">
+<img src="static\readmeimage\ml1.png" alt="about" width="700px" height="400px">
 
 <br><br>
 
