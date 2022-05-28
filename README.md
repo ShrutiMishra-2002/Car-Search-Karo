@@ -13,7 +13,7 @@
 
 pip install -r requirements.txt
 </li>
-<br>
+
 <li>
 <h3>Run Project </h3>
 
@@ -23,7 +23,9 @@ Starting development server at http://127.0.0.1:8000/
 
 will appear click on the http 
 </li>
+<li>
 <h3>The website will run on the localhost</h3>
+</li>
 </ul>
 <br><br>
 
