@@ -7,9 +7,24 @@
 
 ## 📌 How to run this projects:
 <br>
-<h3>1.Create Venv </h3><br>
-<h3>2.Install requirements.txt</h3> <br>
+<ul>
+<li>
+<h3>Install requirements.txt</h3>
+
+pip install -r requirements.txt
+</li>
+<br>
+<li>
 <h3>3.Run Project </h3><br>
+
+python manage.py runserver
+
+Starting development server at http://127.0.0.1:8000/
+
+will appear click on the http 
+</li>
+<h3>The website will run on the localhost</h3>
+</ul>
 <br><br>
 
 ## 📌 Tech Stack:
