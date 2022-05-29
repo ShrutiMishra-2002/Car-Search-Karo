@@ -15,7 +15,11 @@
 <a href="https://youtu.be/9TP7GvM8vyI">HAVE A LOOK</a>
 </h2> 
 <br>
-
+<h2> Python jupyter notebook Link : 
+EDA and Prediction on Automobile Dataset
+<a href="https://colab.research.google.com/drive/1tezf6JpbFDKLVrC2cREVnK5W55L4kDKb?usp=sharing">HAVE A LOOK</a>
+</h2> 
+<br>
 ## 📌 How to run this projects:
 
 <ul>
