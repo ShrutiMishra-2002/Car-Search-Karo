@@ -20,6 +20,7 @@ EDA and Prediction on Automobile Dataset
 <a href="https://colab.research.google.com/drive/1tezf6JpbFDKLVrC2cREVnK5W55L4kDKb?usp=sharing">HAVE A LOOK</a>
 </h2> 
 <br>
+
 ## 📌 How to run this projects:
 
 <ul>
