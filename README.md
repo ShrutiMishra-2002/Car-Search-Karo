@@ -10,7 +10,9 @@
 <a href="https://youtu.be/9TP7GvM8vyI">HAVE A LOOK</a>
 </h2> 
 <br>
+
 ## 📌 How to run this projects:
+
 <ul>
 <li>
 <h3>Clone the project</h3>
@@ -42,8 +44,8 @@ will appear on the terminal click on the http
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
 [![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
-[![DJANGO](https://img.shields.io/badge/django%20-%23323330.svg?&style=for-the-badge&logo=Django&logoColor=%23F7DF1E)]
 [![PYTHON](https://img.shields.io/badge/python%20-%23E34F26.svg?&style=for-the-badge&logo=python&logoColor=white)]
+[![DJANGO](https://img.shields.io/badge/django%20-%23323330.svg?&style=for-the-badge&logo=Django&logoColor=%23F7DF1E)]
 
 <br><br>
 
@@ -59,7 +61,7 @@ will appear on the terminal click on the http
 
 ## 📌 Website flow:
 <br>
-<img src="static\readmeimage\websiteflow.png" alt="header" width="600px" height="400px">
+<img src="static\readmeimage\websiteflow.png" alt="header" width="600px" height="500px">
 
 <br><br>
 
