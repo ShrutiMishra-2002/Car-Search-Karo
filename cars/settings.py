@@ -28,7 +28,7 @@ DEBUG = True
 # ALLOWED_HOSTS = []
 
 
-ALLOWED_HOSTS = ['https://carsearchkaroo.herokuapp.com',
+ALLOWED_HOSTS = ['https://carsearchkaroo.herokuapp.com/',
                  'carsearchkaroo.herokuapp.com',
                  '127.0.0.1']
 
