@@ -6,9 +6,11 @@
 <a href="https://drive.google.com/file/d/10PCp8xDDPVFt9YqOdHoty4kzXVaPH3nm/view?usp=sharing">HAVE A LOOK</a>
 </h2> 
 <br>
-
-## 📌 How to run this projects:
+<h2> Youtube video demo Link : 
+<a href="https://youtu.be/9TP7GvM8vyI">HAVE A LOOK</a>
+</h2> 
 <br>
+## 📌 How to run this projects:
 <ul>
 <li>
 <h3>Clone the project</h3>
@@ -20,13 +22,13 @@ pip install -r requirements.txt
 </li>
 
 <li>
-<h3>Run Project </h3>
+<h3>Run Project on terminal </h3>
 
 python manage.py runserver
 
 Starting development server at http://127.0.0.1:8000/
 
-will appear click on the http 
+will appear on the terminal click on the http 
 </li>
 <li>
 <h3>The website will run on the localhost</h3>
@@ -53,6 +55,12 @@ will appear click on the http
 <li>The web application includes many innovative features to ensure that users get a detailed price estimation based on the filters added such as brand, mileage, price range and a hist of other factors and before visiting a dealer showroom. It also permits the user to provide inputs that they feel might help other users.</li>
 <li>Our vision is to construct a complete ecosystem for prospective buyers so that they have easy and complete access to information and data that will help them in making the right car choice. </li>
 </ul>
+<br><br>
+
+## 📌 Website flow:
+<br>
+<img src="static\readmeimage\websiteflow.png" alt="header" width="600px" height="400px">
+
 <br><br>
 
 ## 📌 Main Page:
