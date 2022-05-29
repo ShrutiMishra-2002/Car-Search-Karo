@@ -79,23 +79,23 @@ will appear on the terminal click on the http
 <br><br>
 <h2>BEST SECTION</h2>
 <br>
-<img src="selectCar\static\readmeimage\bestcar.png" alt="about" width="700px" height="400px">
-<img src="selectCar\static\readmeimage\bestcar1.png" alt="about" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\bestcar.png" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\bestcar1.png" width="700px" height="400px">
 
 <br><br>
 <h2>ANALYSIS SECTION</h2>
 <br>
 
-<img src="selectCar\static\readmeimage\analysis.png" alt="content1" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\analysis.png" width="700px" height="400px">
 <br><br>
 <h2>DASHBOARD SECTION</h2>
 <br>
 
-<img src="selectCar\static\readmeimage\dashboard.png" alt="content1" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\dashboard.png" width="700px" height="400px">
 <br><br>
-<img src="selectCar\static\readmeimage\dashboard1.png" alt="content2" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\dashboard1.png" width="700px" height="400px">
 <br><br>
-<img src="selectCar\static\readmeimage\dashboard2.png" alt="content2" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\dashboard2.png" width="700px" height="400px">
 <br><br>
 <h2>SERVICES SECTION</h2>
 <br>
@@ -104,43 +104,58 @@ will appear on the terminal click on the http
 <br><br>
 <h2>CHATBOT SECTION</h2>
 <br>
-<img src="selectCar\static\readmeimage\chatbot.png" alt="about" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\chatbot.png" width="700px" height="400px">
 <br><br>
-<img src="selectCar\static\readmeimage\chatbot1.png" alt="about" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\chatbot1.png" width="700px" height="400px">
 <br><br>
-<img src="selectCar\static\readmeimage\chatbot2.png" alt="about" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\chatbot2.png" width="700px" height="400px">
 
 <br><br>
 <h2>PRICE PREDICTION SECTION</h2>
 <br>
-<img src="static\readmeimage\ml.png" alt="about" width="700px" height="400px">
+<img src="static\readmeimage\ml.png" width="700px" height="400px">
 <br><br>
-<img src="static\readmeimage\ml1.png" alt="about" width="700px" height="400px">
+<img src="static\readmeimage\ml1.png" width="700px" height="400px">
 
 <br><br>
 
 <h2>FEATURED SECTION</h2>
 <br>
 
-<img src="selectCar\static\readmeimage\featured.png" alt="diwali" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\featured.png" width="700px" height="400px">
 <br><br>
-<img src="selectCar\static\readmeimage\featured1.png" alt="diwali1" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\featured1.png" width="700px" height="400px">
 <br><br>
 <h2>TOP BRANDS SECTION</h2>
 <br>
 
-<img src="selectCar\static\readmeimage\topbrand.png" alt="christmas" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\topbrand.png" width="700px" height="400px">
 <br><br>
 
 <h2>CONTACT SECTION</h2>
 <br>
+<img src="selectCar\static\readmeimage\contact.png" width="700px" height="400px">
+<br><br>
 
-<img src="selectCar\static\readmeimage\contact.png" alt="republic1" width="700px" height="400px">
+<h2>DATABASE FOR CONTACT SUPPORT SECTION</h2>
+<br>
+<h4>Type Admin at the top url section with previous url</h4>
+<h4>example:http://127.0.0.1:8000/admin</h4>
+<br>
+This is how datbase team can check the stored customer information
+<br>
+<img src="static\readmeimage\djangologin.png" width="700px" height="400px">
+<br><br>
+<img src="static\readmeimage\panel.png" width="700px" height="400px">
+<br><br>
+<img src="static\readmeimage\panel1.png" width="700px" height="400px">
+
+
 <br><br>
 <h2>FOOTER SECTION</h2>
 <br>
 
-<img src="selectCar\static\readmeimage\footer.png" alt="christmas" width="700px" height="400px">
+<img src="selectCar\static\readmeimage\footer.png" width="700px" height="400px">
 <br><br>
 
 <h2>📌 Contact :</h2>
