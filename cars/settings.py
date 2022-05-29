@@ -30,8 +30,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*',
                  '0.0.0.0',
-                 'https://demotesst.herokuapp.com/',
-                 'https://demotesst.herokuapp.com',
+                 'http://demotesst.herokuapp.com/',
+                 'http://demotesst.herokuapp.com',
                  'demotesst.herokuapp.com',
                  '127.0.0.1',
                  'localhost'
