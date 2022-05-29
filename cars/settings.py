@@ -30,11 +30,11 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*',
                  '0.0.0.0',
-                 'https://carsearchkaroo.herokuapp.com/'
-                 'http://carsearchkaroo.herokuapp.com/',
-                 'http://carsearchkaroo.herokuapp.com',
-                 'https://carsearchkaroo.herokuapp.com',
-                 'carsearchkaroo.herokuapp.com'
+                 'https://carsearchkaro.herokuapp.com/'
+                 'http://carsearchkaro.herokuapp.com/',
+                 'http://carsearchkaro.herokuapp.com',
+                 'https://carsearchkaro.herokuapp.com',
+                 'carsearchkaro.herokuapp.com'
                  '127.0.0.1',
                  'localhost'
 
