@@ -523,33 +523,28 @@ Page {% endblock %} {% block body %}
       allowfullscreen=""
       loading="lazy"
     ></iframe>
-    <!-- <form action="">
-      <h3>get in touch</h3>
-      <input type="text" placeholder="your name" class="box" />
-      <input type="email" placeholder="your email" class="box" />
-      <input type="tel" placeholder="subject" class="box" />
-      <textarea
-        placeholder="your message"
-        class="box"
-        cols="30"
-        rows="10"
-      ></textarea>
-      <input type="submit" value="send message" class="btn" />
-    </form> -->
     <form action="/#contact" method="POST">
       {% csrf_token %}
       <h3>get in touch</h3>
       {% if car.alert %}
-          <div class="alert alert-success" role="alert"> {{car.alert}} </div>
+      <div class="alert alert-success" role="alert">{{car.alert}}</div>
       {% else %}
-          <div class="alert alert-light" role="alert"> Please Fill all the filed's</div>
+      <div class="alert alert-light" role="alert">
+        Please Fill all the filed's
+      </div>
       {% endif %}
-      <input type="text" name="name" placeholder="your name" class="box">
-      <input type="email" name="email" placeholder="your email" class="box">
-      <input type="text" name="subject" placeholder="subject" class="box">
-      <textarea name="message" placeholder="your message" class="box" cols="30" rows="8"></textarea>
-      <input type="submit" value="send message" class="btn">
-  </form>
+      <input type="text" name="name" placeholder="your name" class="box" />
+      <input type="email" name="email" placeholder="your email" class="box" />
+      <input type="text" name="subject" placeholder="subject" class="box" />
+      <textarea
+        name="message"
+        placeholder="your message"
+        class="box"
+        cols="30"
+        rows="8"
+      ></textarea>
+      <input type="submit" value="send message" class="btn" />
+    </form>
   </div>
 </section>
 <!-- contact section ends -->
