@@ -28,7 +28,7 @@ DEBUG = False
 # ALLOWED_HOSTS = []
 
 
-ALLOWED_HOSTS = ['*','carsearchkaroo.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
