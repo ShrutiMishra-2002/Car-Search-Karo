@@ -32,7 +32,8 @@ ALLOWED_HOSTS = ['*',
                  '0.0.0.0',
     'https://carsearchkaroo.herokuapp.com/',
            'carsearchkaroo.herokuapp.com',
-    '127.0.0.1'
+    '127.0.0.1',
+                 'localhost'
 
                 ]
 
