@@ -1,18 +1,18 @@
-from ast import Str
-from asyncio.windows_events import NULL
-from copyreg import pickle
+# from ast import Str
+# from asyncio.windows_events import NULL
+# from copyreg import pickle
 from django.shortcuts import render
 from django.views import View
 import pandas as pd
-import plotly.express as px
-import json
+# import plotly.express as px
+# import json
 from .models import ContactUs
 import pickle
 import numpy as np
 
 # Read data from csv file
 df = pd.read_csv("selectCar/data/processed_cardekho.csv")
-model = pickle.load(open('selectCar/data/deepmodel.sav', "rb"))
+# model = pickle.load(open('selectCar/data/deepmodel.sav', "rb"))
 
 # Current car details
 car: dict = {
@@ -182,7 +182,7 @@ class Prediction(View):
         l=np.array([UserInput])
         l.reshape(-1, 1)
 
-        result = model.predict(l)
+        result = {} #model.predict(l)
 
         return render(request, 'selectCar/prediction.html',{'result':result})
   
