@@ -182,8 +182,9 @@ class Prediction(View):
         l=np.array([UserInput])
         l.reshape(-1, 1)
 
-        result = model.predict(l)
-
+        res = model.predict(l)
+        res1=int(res[0])
+        result=f"{res1:,d}"
         return render(request, 'selectCar/prediction.html',{'result':result})
   
 
