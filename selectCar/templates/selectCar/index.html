@@ -190,6 +190,20 @@ Page {% endblock %} {% block body %}
         models using ML ?</a
       >
     </div>
+    <div class="form-group">
+      <form action="{% url 'query1' %}" method="POST" class="mb-3">
+        {% csrf_token %}
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="Textarea1" name = "Textarea1" rows="3"></textarea>
+      <div class="text-center">
+        <input
+          class="btn btn-outline-success font-weight-bold"
+          type="submit"
+          value="Solve Query"
+        />
+      </div>
+    </div>
+
   </div>
 </section>
 <!-- question section ends -->

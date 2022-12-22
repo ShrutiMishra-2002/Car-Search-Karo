@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import config
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,6 +85,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cars.wsgi.application'
 
+env = environ.Env()
+environ.Env.read_env()
+API_KEY = env("API_KEY")
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
