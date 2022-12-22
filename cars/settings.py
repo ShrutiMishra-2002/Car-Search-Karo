@@ -36,8 +36,8 @@ ALLOWED_HOSTS = [
                 'http://cardekhoprojectdemo.herokuapp.com/',
                 '.vercel.app',
                 'cardekhoprojectdemo.herokuapp.com',
-                 '127.0.0.1'
-
+                 '127.0.0.1',
+                'http://localhost/'
                 ]
 
 

@@ -274,8 +274,8 @@ def query(request):
        
 
         openai.api_key= API_KEY
-        if request.POST["Textarea1"]:
-            ques=str(request.POST["Textarea1"])
+        if request.POST["query"]:
+            ques=str(request.POST["query"])
             print(ques)
 
             answer = openai.Completion.create(
@@ -289,5 +289,5 @@ def query(request):
             stop=["\n"]
             )
             print(answer.choices[0].text)
-        return HttpResponse(answer.choices[0].text)
-        #return render(request, 'selectCar/query.html',{'result':response})
+        #return HttpResponse(answer.choices[0].text)
+        return render(request, 'selectCar/index.html',{'result1':answer.choices[0].text})
