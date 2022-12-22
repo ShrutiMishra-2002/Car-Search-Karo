@@ -130,3 +130,7 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
+
+
+console.log("fwaofaowfba")

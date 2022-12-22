@@ -9,10 +9,22 @@ import pandas as pd
 from .models import ContactUs
 import pickle
 import numpy as np
+import os
+import openai
+from django.http import HttpResponse
+import environ
+
 
 # Read data from csv file
 df = pd.read_csv("selectCar/data/processed_cardekho.csv")
 model = pickle.load(open('selectCar/data/deepmodel.sav', "rb"))
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
+
+# Raises django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
+API_KEY = env("API_KEY")
+print("API_KEY", API_KEY)
 
 # Current car details
 car: dict = {
@@ -182,8 +194,9 @@ class Prediction(View):
         l=np.array([UserInput])
         l.reshape(-1, 1)
 
-        result = model.predict(l)
-
+        res = model.predict(l)
+        res1=int(res[0])
+        result=f"{res1:,d}"
         return render(request, 'selectCar/prediction.html',{'result':result})
   
 
@@ -255,3 +268,26 @@ def data8(request):
     tempDF=  tempDF.sort_values('enginev', ascending=False).head()
     car['dataSet'] = len(tempDF)
     return render(request, 'selectCar/car.html',{'car':car, "dataT":tempDF.values.tolist(), "dataY":str(tempDF["selling_price"].values.tolist()), "dataX": str(tempDF["name"].values.tolist())})
+
+
+def query(request):
+       
+
+        openai.api_key= API_KEY
+        if request.POST["query"]:
+            ques=str(request.POST["query"])
+            print(ques)
+
+            answer = openai.Completion.create(
+            model="text-davinci-003",
+            prompt=f"Q:{ques}\n A:",
+            temperature=0,
+            max_tokens=100,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0,
+            stop=["\n"]
+            )
+            print(answer.choices[0].text)
+        #return HttpResponse(answer.choices[0].text)
+        return render(request, 'selectCar/index.html',{'result1':answer.choices[0].text})

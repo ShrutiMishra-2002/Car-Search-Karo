@@ -18,6 +18,7 @@ urlpatterns = [
        path('car/data6', views.data6, name='result6'),
        path('car/data7', views.data7, name='result7'),
        path('car/data8', views.data8, name='result8'),
+       path('car/data9', views.query, name='query1'),
        # path('car/data9', views.data9, name='result9'),
        
        # Prediction page URL

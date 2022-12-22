@@ -130,3 +130,23 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
+console.log("fwaofaowfba")
+// document.getElementById("queryForm").onsubmit(e => {
+//   console.log("afaofnaow")
+//   e.preventDefault()
+// })
+
+function post_comment() {
+  $.post(
+    '/data9/',{
+      reply: false,
+      csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').val(),
+      user_name: $('input[name="query"]').val()
+    },
+    function (data) {
+      alert(data);
+    }
+  );
+
+}
