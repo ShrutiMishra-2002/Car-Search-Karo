@@ -6,8 +6,11 @@
 ## 📌 Useful links:
 
 <br>
+<h2> Website is live :
+<a href="https://car-search-karo.onrender.com">HAVE A LOOK</a>
+</h2> 
 
-<h2> Document file Link : 
+<h2> Document File Link : 
 <a href="https://drive.google.com/file/d/1pgOjvcFya-2zpKJ2SreOqtu0X1p0Ez5u/view?usp=sharing">HAVE A LOOK</a>
 </h2> 
 
@@ -15,12 +18,10 @@
 <a href="https://youtu.be/9TP7GvM8vyI">HAVE A LOOK</a>
 </h2> 
 
-<h2> Python jupyter notebook Link : EDA and Prediction on Automobile Dataset
-<a href="https://colab.research.google.com/drive/1tezf6JpbFDKLVrC2cREVnK5W55L4kDKb?usp=sharing">HAVE A LOOK</a>
-</h2> 
+
 <br>
 
-## 📌 How to run this projects:
+## 📌 How to run this project:
 
 <ul>
 <li>
