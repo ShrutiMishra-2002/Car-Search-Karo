@@ -29,10 +29,6 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-                'https://cardekhoprojectdemo.herokuapp.com',
-                'http://cardekhoprojectdemo.herokuapp.com/',
-                'http://cardekhoprojectdemo.herokuapp.com/',
-                'cardekhoprojectdemo.herokuapp.com',
                 'car-search-karo.onrender.com'
                 ]
 
