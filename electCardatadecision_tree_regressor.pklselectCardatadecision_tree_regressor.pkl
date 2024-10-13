@@ -1,0 +1,11 @@
+[33mcommit 2e65a13ab1b653617705660e2c4c35e8f0973934[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Adm-2005 <akshatdmishra2005@gmail.com>
+Date:   Sun Oct 13 19:24:59 2024 +0530
+
+    Changed model to decision tree regressor
+
+[33mcommit 9f2a91fc36e19886e9e4f2cf23ebf8e0fe8142bb[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Adm-2005 <akshatdmishra2005@gmail.com>
+Date:   Sun Oct 13 15:35:30 2024 +0530
+
+    added support for sklearn 1.5.2
