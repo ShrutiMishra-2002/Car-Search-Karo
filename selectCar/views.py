@@ -12,7 +12,7 @@ import numpy as np
 
 # Read data from csv file
 df = pd.read_csv("selectCar/data/processed_cardekho.csv")
-model = pickle.load(open('selectCar/data/rfregressor.pkl', "rb"))
+model = pickle.load(open('selectCar/data/decision_tree_regressor.pkl', "rb"))
 
 # Current car details
 car: dict = {
