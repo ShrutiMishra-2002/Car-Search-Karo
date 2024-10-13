@@ -6,18 +6,22 @@
 ## 📌 Useful links:
 
 <br>
+<<h2> Website is live :
+<a href="https://car-search-karo.onrender.com">HAVE A LOOK</a>
+</h2>
 
 <h2> Document file Link : 
 <a href="https://drive.google.com/file/d/1pgOjvcFya-2zpKJ2SreOqtu0X1p0Ez5u/view?usp=sharing">HAVE A LOOK</a>
-</h2> 
+</h2>
 
 <h2> Youtube video demo Link : 
 <a href="https://youtu.be/9TP7GvM8vyI">HAVE A LOOK</a>
-</h2> 
+</h2>
 
-<h2> Python jupyter notebook Link : EDA and Prediction on Automobile Dataset
+<!-- <h2> Python jupyter notebook Link : EDA and Prediction on Automobile Dataset
 <a href="https://colab.research.google.com/drive/1tezf6JpbFDKLVrC2cREVnK5W55L4kDKb?usp=sharing">HAVE A LOOK</a>
-</h2> 
+</h2>  -->
+
 <br>
 
 ## 📌 How to run this projects:
@@ -30,6 +34,7 @@
 <h3>Install requirements.txt</h3>
 
 pip install -r requirements.txt
+
 </li>
 
 <li>
@@ -39,7 +44,8 @@ python manage.py runserver
 
 Starting development server at http://127.0.0.1:8000/
 
-will appear on the terminal click on the http 
+will appear on the terminal click on the http
+
 </li>
 <li>
 <h3>The website will run on the localhost</h3>
@@ -48,6 +54,7 @@ will appear on the terminal click on the http
 <br><br>
 
 ## 📌 Tech Stack:
+
 <br>
 
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
@@ -59,6 +66,7 @@ will appear on the terminal click on the http
 <br><br>
 
 ## 📌 About the project:
+
 <br>
 <ul>
 <li>CarSearchKaro is a data analysis and machine learning venture that helps users search cars that meet their requirements.</li>
@@ -69,12 +77,14 @@ will appear on the terminal click on the http
 <br><br>
 
 ## 📌 Website flow:
+
 <br>
 <img src="static\readmeimage\websiteflow.png" alt="header" width="600px" height="500px">
 
 <br><br>
 
 ## 📌 Main Page:
+
 <br><br>
 
 <h2>HOME SECTION</h2>
@@ -87,6 +97,7 @@ will appear on the terminal click on the http
 <img src="selectCar\static\readmeimage\bestcar1.png" width="700px" height="400px">
 
 <br><br>
+
 <h2>ANALYSIS SECTION</h2>
 <br>
 
@@ -115,6 +126,7 @@ will appear on the terminal click on the http
 <img src="selectCar\static\readmeimage\chatbot2.png" width="700px" height="400px">
 
 <br><br>
+
 <h2>PRICE PREDICTION SECTION</h2>
 <br>
 <img src="static\readmeimage\ml.png" width="700px" height="400px">
@@ -154,8 +166,8 @@ This is how datbase team can check the stored customer information
 <br><br>
 <img src="static\readmeimage\panel1.png" width="700px" height="400px">
 
-
 <br><br>
+
 <h2>FOOTER SECTION</h2>
 <br>
 
@@ -174,4 +186,3 @@ This is how datbase team can check the stored customer information
 <br>
 <div align="center">
 © 2021 Shruti Mishra </div>
-
