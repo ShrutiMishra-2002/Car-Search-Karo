@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
                 'http://cardekhoprojectdemo.herokuapp.com/',
                 'http://cardekhoprojectdemo.herokuapp.com/',
                 'cardekhoprojectdemo.herokuapp.com',
-                'car-search-karo.onrender.com/'
+                'car-search-karo.onrender.com'
                 ]
 
 
